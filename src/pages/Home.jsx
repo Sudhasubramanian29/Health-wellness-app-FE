@@ -24,10 +24,8 @@ const Home = () => {
       className="h-screen w-full bg-cover bg-center bg-no-repeat relative transition-all duration-1000 ease-in-out"
       style={{ backgroundImage: `url(${images[current]})` }}
     >
-      {/* Dark Overlay */}
+     
       <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
-
-      {/* Centered Content */}
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-6">
         <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">
           Welcome to WellnessApp

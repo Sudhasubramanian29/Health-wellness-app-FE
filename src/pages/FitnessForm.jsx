@@ -37,14 +37,14 @@ const FitnessForm = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-300 via-blue-200 to-purple-200 px-4 relative overflow-hidden">
       <ToastContainer />
 
-      {/* Popup for login */}
+     
       {showLoginPopup && (
         <div className="absolute top-6 left-1/2 transform -translate-x-1/2 bg-red-200 text-red-800 px-6 py-3 rounded-xl shadow-md animate-bounce z-50 font-medium">
           ⚠️ Please login to add a fitness log.
         </div>
       )}
 
-      {/* Glass card */}
+     
       <div className="w-full max-w-md bg-white/30 backdrop-blur-md border border-white/40 rounded-3xl p-8 shadow-2xl">
         <h2 className="text-3xl font-extrabold text-white mb-8 text-center drop-shadow">
           🏋️ Add Your Fitness Log

@@ -46,7 +46,7 @@ const NutritionForm = () => {
 
   return (
     <>
-      {/* Toast messages */}
+     
       <ToastContainer position="top-center" autoClose={3000} hideProgressBar newestOnTop />
 
       <div className="min-h-screen pt-24 flex items-center justify-center bg-gradient-to-br from-green-100 via-yellow-100 to-pink-100 px-4 relative overflow-hidden">

@@ -1,4 +1,4 @@
-// /client/src/api/api.js
+
 const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export async function loginUser(email, password) {
@@ -13,7 +13,6 @@ export async function loginUser(email, password) {
   return data;
 }
 
-// Similarly, you can add more functions here:
 export async function registerUser(userData) {
   const response = await fetch(`${BASE_URL}/api/users/register`, {
     method: 'POST',

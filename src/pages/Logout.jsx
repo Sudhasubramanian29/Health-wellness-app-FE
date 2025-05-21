@@ -5,11 +5,11 @@ const Logout = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    localStorage.removeItem("userId"); // ❌ remove user session
-    navigate("/login"); // 🔁 redirect to login
+    localStorage.removeItem("userId"); 
+    navigate("/login"); 
   }, [navigate]);
 
-  return null; // or show a spinner/loading screen
+  return null; 
 };
 
 export default Logout;

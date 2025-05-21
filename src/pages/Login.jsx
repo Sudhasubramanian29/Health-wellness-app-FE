@@ -46,7 +46,7 @@ const Login = () => {
     Login
   </button>
 
-  {/* ✅ Register suggestion added below */}
+  
   <div className="text-center text-sm mt-4">
     Don’t have an account?{" "}
     <span

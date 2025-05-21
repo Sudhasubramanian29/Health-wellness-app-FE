@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react"; // or use another icon lib
+import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
 
 const Navbar = () => {
   const location = useLocation();
-  const userId = localStorage.getItem("userId"); // Check if logged in
-  const [menuOpen, setMenuOpen] = useState(false); // Toggle state
+  const userId = localStorage.getItem("userId"); 
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const linkClasses = (path) =>
     `block px-4 py-2 rounded hover:bg-blue-400 transition ${
@@ -16,12 +16,12 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-gray-700 text-white px-6 py-4 shadow z-50">
       <div className="flex justify-between items-center">
-        {/* Logo */}
+        
         <Link to="/" className="flex items-center">
           <Logo />
         </Link>
 
-        {/* Hamburger - visible on small screens */}
+       
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden text-white focus:outline-none"
@@ -29,7 +29,7 @@ const Navbar = () => {
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        {/* Nav Links - visible on md+ screens */}
+        
         <div className="hidden md:flex space-x-2 text-sm md:text-base items-center">
           <Link to="/dashboard" className={linkClasses("/dashboard")}>
             Dashboard
@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+    
       {menuOpen && (
         <div className="md:hidden mt-2 flex flex-col space-y-2">
           <Link to="/dashboard" className={linkClasses("/dashboard")} onClick={() => setMenuOpen(false)}>

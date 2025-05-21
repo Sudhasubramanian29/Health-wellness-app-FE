@@ -53,7 +53,7 @@ const Register = () => {
     Register
   </button>
 
-  {/* ✅ Added Below */}
+
   <div className="text-center text-sm mt-4">
     Already have an account?{" "}
     <span
